@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/* nawigacja strony */
+.nav{
+    height: 50px;
+    background-color:#333;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+.nav-item a{
+    padding: 0 50px;
+    color: rgb(235, 226, 226);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 2px;
+    transition: .3s;
+}
+
+.nav-item a:hover {
+    color: rgb(112, 112, 224);
+}
+
+/* header hero */
+.header-img{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/planets-g3d96db62c_1920.jpg');
+    background-size: cover;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: snow;
+    z-index: 5;
+}   
+
+.header-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 3, 27, 0.1);
+}
+
+.header-text h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* main */
+main{
+    margin: 50px auto;
+    /* marginses od dołu i góry oraz dodatkowo się wyśrodkuje */
+    width: 1200px;
+}
+
+main h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us-box{
+    position: relative;
+    height: 300px;
+    margin: 40px 0;
+    /* margines 40 pikseli pomiędzy i 0 od lewej prawej */
+    background-attachment: fixed;
+    background-position: center;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    /* niewyciekają literki cienie itd poza wyznaczony obszar */
+}
+
+.top{
+    background-image: url('../img/cup-of-coffee-ge0503fc04_1920.jpg');
+}
+
+.middle{
+    background-image: url('../img/phone-ge7b737a52_1920.jpg');
+}
+
+.bottom{
+    background-image: url('../img/planets-g3d96db62c_1920.jpg');
+}
+
+.about-us-text{
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.about-us-text h3{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+.about-us-bg{
+    position: absolute;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,.5);
+}
+
+/*usługi  */
+.service-list{
+    margin: 0 auto;
+    width: 200px;
+    /* background-color: brown; */
+}
+
+.prices-table{
+    margin: 0 auto;  
+}
+
+.prices-table td{
+    padding: 10px 30px;
+}
+
+.contact-info{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* footer */
+footer{
+    height: 100px;
+    line-height: 80px;
+    background-color: rgb(0, 217, 255);
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon-box{
+    margin-left: 30px;
+}
+
+.icon-box a{
+    margin: 0 5px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.icon-box a:hover{
+    color: aliceblue;
+}

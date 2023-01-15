@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255,255,255);
+    background-color: #333;
+    /* background-image: linear-gradient(315deg, #4b7c7c 0%, #333 74%); */
+}
+
+.rectengular{
+    cursor: pointer;
+    /* transition: 1s; */
+    position: absolute;
+}
+
+.shortsize{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.long {
+    width: 800px;
+    height: 60px;   
+    top: 50px;
+    left: calc(50% - 400px);
+    background-color: red;
+}
+
+.long:hover {
+    background-color: yellow;
+    transform: scale(0.5, 1.5)
+}
+
+.short{
+    background-color: blue;
+    top: 180px;
+    left: calc(50% - 150px);
+    border-radius: 25px;   
+}
+
+.short:hover{
+    transform: rotate(360deg);
+    transition: 2s ease-out;
+}
+
+.short:hover ~.short2{
+    transform: rotate(-360deg);
+    
+}
+
+.short:hover ~.short3{
+    transform: rotate(360deg);
+    
+}
+
+.short2{
+    top: 300px;
+    background-color: yellow;
+    left: calc(25% - 150px);
+    transition: 2s 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.short3{
+    top: 300px;
+    background-color: green;
+    left: calc(75% - 150px);
+    transition: 2s 1s linear;
+}
+
